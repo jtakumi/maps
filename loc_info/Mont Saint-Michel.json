@@ -1,0 +1,78 @@
+﻿[
+  {
+    "address_components": [
+      {
+        "long_name": "Mont Saint-Michel",
+        "short_name": "Mont Saint-Michel",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Manche",
+        "short_name": "Manche",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Normandy",
+        "short_name": "Normandy",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "France",
+        "short_name": "FR",
+        "types": [
+          "country",
+          "political"
+        ]
+      },
+      {
+        "long_name": "50170",
+        "short_name": "50170",
+        "types": [
+          "postal_code"
+        ]
+      }
+    ],
+    "formatted_address": "50170 Mont Saint-Michel, France",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 48.6370023,
+          "lng": -1.5078727
+        },
+        "southwest": {
+          "lat": 48.6119469,
+          "lng": -1.5495236
+        }
+      },
+      "location": {
+        "lat": 48.636063,
+        "lng": -1.511457
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 48.6370023,
+          "lng": -1.5078727
+        },
+        "southwest": {
+          "lat": 48.6119469,
+          "lng": -1.5495236
+        }
+      }
+    },
+    "place_id": "ChIJs-6cfNaoDkgR_sMNfuRMg8U",
+    "types": [
+      "locality",
+      "political"
+    ]
+  }
+]

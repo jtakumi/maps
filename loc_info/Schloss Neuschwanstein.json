@@ -1,0 +1,96 @@
+﻿[
+  {
+    "address_components": [
+      {
+        "long_name": "20",
+        "short_name": "20",
+        "types": [
+          "street_number"
+        ]
+      },
+      {
+        "long_name": "Neuschwansteinstraße",
+        "short_name": "Neuschwansteinstraße",
+        "types": [
+          "route"
+        ]
+      },
+      {
+        "long_name": "Schwangau",
+        "short_name": "Schwangau",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Ostallgäu",
+        "short_name": "Ostallgäu",
+        "types": [
+          "administrative_area_level_3",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Schwaben",
+        "short_name": "Schwaben",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Bayern",
+        "short_name": "BY",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Germany",
+        "short_name": "DE",
+        "types": [
+          "country",
+          "political"
+        ]
+      },
+      {
+        "long_name": "87645",
+        "short_name": "87645",
+        "types": [
+          "postal_code"
+        ]
+      }
+    ],
+    "formatted_address": "Neuschwansteinstraße 20, 87645 Schwangau, Germany",
+    "geometry": {
+      "location": {
+        "lat": 47.557574,
+        "lng": 10.7498004
+      },
+      "location_type": "ROOFTOP",
+      "viewport": {
+        "northeast": {
+          "lat": 47.5588784802915,
+          "lng": 10.74988
+        },
+        "southwest": {
+          "lat": 47.5561805197085,
+          "lng": 10.7401463
+        }
+      }
+    },
+    "partial_match": true,
+    "place_id": "ChIJXaNOxMr3nEcRo7ud02uGpsg",
+    "plus_code": {
+      "compound_code": "HP5X+2W Schwangau, Germany",
+      "global_code": "8FVGHP5X+2W"
+    },
+    "types": [
+      "establishment",
+      "point_of_interest",
+      "tourist_attraction"
+    ]
+  }
+]
