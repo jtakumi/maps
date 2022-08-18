@@ -1,0 +1,63 @@
+﻿[
+  {
+    "address_components": [
+      {
+        "long_name": "Numazu",
+        "short_name": "Numazu",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Shizuoka",
+        "short_name": "Shizuoka",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Japan",
+        "short_name": "JP",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Numazu, Shizuoka, Japan",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 35.2191983,
+          "lng": 138.9239581
+        },
+        "southwest": {
+          "lat": 34.9384849,
+          "lng": 138.7526046
+        }
+      },
+      "location": {
+        "lat": 35.0956068,
+        "lng": 138.8635399
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 35.2191983,
+          "lng": 138.9239581
+        },
+        "southwest": {
+          "lat": 34.9384849,
+          "lng": 138.7526046
+        }
+      }
+    },
+    "place_id": "ChIJd8qCk3ePGWARj7rWaLvxuAk",
+    "types": [
+      "locality",
+      "political"
+    ]
+  }
+]
