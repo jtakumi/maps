@@ -6,12 +6,12 @@ from pygeocoder import Geocoder
 import googlemaps
 
 googleapikey='key'
-output_path = 'C:/Users/Takum/programing/googleMap/'
+output_path = 'C:/Users/Takum/programing/maps/'
 pixel = '640x480'
 scale='18'
 
 location = ["国会議事堂","沼津","香港","Seattle","Schloss Neuschwanstein"
-            ,"big ben","Mont Saint-Michel","東京都庁"]
+            ,"big ben","Mont Saint-Michel","東京都庁","Rio de Janeiro","北京"]
 
 loc_dict = []
 
@@ -20,12 +20,8 @@ def loc_csv():
     #delete duplications
     df=df.drop_duplicates('loc')
     fn="./loc_csv/loc_info.csv"
-    if os.path.exists(fn) is True:
-        with open(fn,'a',encoding='utf-8-sig') as f:
-            df.to_csv(fn)
-    else:
-        #export csv
-        df.to_csv(fn)
+    #export csv
+    df.to_csv(fn)
 
 def dl_image():
     loc = pd.read_csv("./loc_csv/loc_info.csv",index_col="Unnamed: 0")
