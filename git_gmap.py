@@ -6,7 +6,6 @@ from pygeocoder import Geocoder
 import googlemaps
 
 googleapikey='key'
-output_path = 'C:/Users/Takum/programing/maps/'
 pixel = '640x480'
 scale='18'
 
@@ -20,8 +19,12 @@ def loc_csv():
     #delete duplications
     df=df.drop_duplicates('loc')
     fn="./loc_csv/loc_info.csv"
-    #export csv
-    df.to_csv(fn)
+    if os.path.exists(fn) is True:
+        with open(fn,'a',encoding='utf-8-sig') as f:
+            df.to_csv(fn)
+    else:
+        #export csv
+        df.to_csv(fn)
 
 def dl_image():
     loc = pd.read_csv("./loc_csv/loc_info.csv",index_col="Unnamed: 0")
@@ -45,7 +48,7 @@ def dl_image():
         #URL setting
         url = html[0] + axis + html[1] + html[2] + pixel + html[3] + html[4] + scale + html[5] + axis + html[6] + googleapikey
         #photo path
-        dst_path = output_path + 'loc_photo/' + str(lc) + ".png"
+        dst_path =  './loc_photo/' + str(lc) + ".png"
         #if the photo already exist,no use google map api.
         if os.path.exists(dst_path) is True:
             pass
@@ -81,10 +84,13 @@ def main():
                 loc_dict.append({'loc':i,'lat':lat,'lng':lng,'formatted_address':format_ad})
                 with open(fname,'w',encoding='utf-8-sig') as f:
                     print(json.dumps(result,indent=2,ensure_ascii=False),file=f)
-    #make a csv file
-    loc_csv()
-    #download location photos
-    dl_image()
+    if len(loc_dict) == 0:
+        pass
+    else:
+        #make a csv file
+        loc_csv()
+        #download location photos
+        dl_image()
 
 
 if __name__ == "__main__":
