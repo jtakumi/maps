@@ -62,6 +62,19 @@ def dl_image():
                 with open(dst_path,mode="wb") as f:
                     f.write(data)
 
+def mk_dir():
+    if os.path.isdir("./loc_csv") == True:
+        pass
+    else:
+        os.system("mkdir loc_csv")
+    if os.path.isdir("./loc_info") == True:
+        pass
+    else:
+        os.system("mkdir loc_info")
+    if os.path.isdir("./loc_photo") == True:
+        pass
+    else:
+        os.system("mkdir loc_photo")
 
 
 def main():
@@ -85,8 +98,10 @@ def main():
                 with open(fname,'w',encoding='utf-8-sig') as f:
                     print(json.dumps(result,indent=2,ensure_ascii=False),file=f)
     if len(loc_dict) == 0:
-        pass
+        print("You haven't new data.")
     else:
+        #make directries
+        mk_dir()
         #make a csv file
         loc_csv()
         #download location photos
